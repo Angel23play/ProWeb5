@@ -1,5 +1,5 @@
 6️⃣ Noticias desde WordPress 📰
-🔗 API: [Buscar una API de WordPress REST]
+🔗 API: [Buscar una API de WordPress REST]'https://wordpress.com/es/blog/category/noticias/'
 📌 Descripción:
 
 Obtener las últimas 3 noticias de una página hecha con WordPress.

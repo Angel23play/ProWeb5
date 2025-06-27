@@ -76,10 +76,11 @@ if ($_POST) {
         </div>
     <?php endif; ?>
 </section>
-                <script>
-                    const audio = document.getElementById('pokemonAudio');
-                    audio.addEventListener('error', () => {
-                        document.getElementById('pokemonAudio').style.display = 'none';
-                        document.getElementById('audioError').style.display = 'block';
-                    });
-                </script>
+
+<script>
+    const audio = document.getElementById('pokemonAudio');
+    audio.addEventListener('error', () => {
+        document.getElementById('pokemonAudio').style.display = 'none';
+        document.getElementById('audioError').style.display = 'block';
+    });
+</script>
