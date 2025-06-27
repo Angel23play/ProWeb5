@@ -1,18 +1,18 @@
+<?php
+$data = null;
+$nombre = $_POST['nombre'] ?? '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $api = curl_init();
+    curl_setopt($api, CURLOPT_URL, "https://api.genderize.io/?name=" . urlencode($nombre));
+    curl_setopt($api, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($api);
+    curl_close($api);
+    $data = json_decode($response, true);
+}
+?>
+
 <section class="container mt-5">
-    <?php
-    $data = null;
-    $nombre = $_POST['nombre'] ?? '';
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $api = curl_init();
-        curl_setopt($api, CURLOPT_URL, "https://api.genderize.io/?name=" . urlencode($nombre));
-        curl_setopt($api, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($api);
-        curl_close($api);
-        $data = json_decode($response, true);
-    }
-    ?>
-
     <div class="card shadow">
         <div class="card-header bg-primary text-white text-center rounded-top-4">
             <h3 class="mb-0">🔎 Predecir el género por nombre</h3>

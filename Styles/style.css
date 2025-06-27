@@ -18,19 +18,35 @@ body {
   text-align: center;
 }
 
-    .alert-female {
-        background-color: #ffe6f0;
-        border-color: #f5c6d6;
-        color: #b30059;
-    }
+.alert-female {
+  background-color: #ffe6f0;
+  border-color: #f5c6d6;
+  color: #b30059;
+}
 
-    .alert-male {
-        background-color: #e0f0ff;
-        border-color: #b8daff;
-        color: #004085;
-    }
+.alert-male {
+  background-color: #e0f0ff;
+  border-color: #b8daff;
+  color: #004085;
+}
 .emoji-big {
   font-size: 2.5rem;
   display: inline-block;
   margin-top: 10px;
+}
+
+.joke-card {
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+.joke-icon {
+  font-size: 2rem;
+  color: #f39c12;
+}
+.joke-type {
+  font-size: 0.9rem;
+  color: #6c757d;
 }
