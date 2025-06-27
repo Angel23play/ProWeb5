@@ -14,16 +14,16 @@
     ?>
 
     <div class="card shadow">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-primary text-white text-center rounded-top-4">
             <h3 class="mb-0">🔎 Predecir el género por nombre</h3>
         </div>
         <div class="card-body">
             <form method="post">
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($nombre) ?>" class="form-control" required>
+                    <label for="nombre" class="form-label fw-bold">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($nombre) ?>" class="form-control form-control-lg rounded-3 shadow-sm" placeholder="Ej. Julian" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Predecir</button>
+                <button type="submit" class="btn btn-success w-100 fw-bold">Predecir</button>
             </form>
 
             <?php if ($data): ?>
