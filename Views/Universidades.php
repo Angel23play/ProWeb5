@@ -18,6 +18,7 @@ if ($_POST) {
     $response = curl_exec($api);
     curl_close($api);
     $data = json_decode($response, true);
+
 }
 
 ?>
@@ -43,7 +44,7 @@ if ($_POST) {
 
     <?php if ($data): ?>
         <div class="mt-5">
-            <h3 class="text-center text-primary mb-4">🎓 Lista de Universidades encontradas</h3>
+            <h3 class="text-center text-primary mb-4">🎓 Lista de Universidades encontradas en <?= htmlspecialchars($country)?></h3>
             <div class="">
                 <?php foreach ($data as $uni): ?>
                     <div class="col">
